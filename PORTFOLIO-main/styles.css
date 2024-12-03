@@ -1,0 +1,383 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+} 
+ html,body{
+    width: 100vw;
+    height: 100vh;
+}
+.background-box {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(13, 13, 14);
+    
+  }
+.container{
+    width: 100vw;
+    position: relative;
+}
+header{
+    pointer-events: none;
+    background-color:transparent;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px ;  
+}
+.logo{
+    color:#0ef;
+    font-weight: bolder;
+    /* text-shadow:5px 10px 5px rgb(98, 241, 193); */
+}
+.line{
+    margin-bottom: 10px;
+}
+.naam{
+    font-size:xx-large;
+    font-weight: bold;
+}
+nav a{
+    margin: 0 20px;
+}
+nav>a:hover{
+    background-color:#0ef ;
+    color: rgb(25, 25, 49);
+    box-shadow: 0 0 30px #0ef;
+}
+.text{
+    padding: 10%;
+    width: 63%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.reaches a{
+    color: #0ef ;
+    width: 30px;
+    font: 700;
+    font-size: x-large;
+    margin: 20px;
+    pointer-events: auto;
+}
+.reaches{
+    display: grid;
+ grid-template-columns: 25% 25% 25% 25%;
+ grid-template-rows:1fr;
+}
+.reaches a:hover{
+   /* box-shadow: 0 0 20px rgb(98, 241, 193); */
+   color: rgb(4, 99, 69) ;
+   
+}
+.moreabout{
+    font-size: large;
+    border: none;
+    font-weight: 900;
+    background-color: #0ef;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    padding: 5px;
+    pointer-events:auto;
+    cursor: pointer;
+}
+.moreabout:hover{
+    box-shadow: 0 0 40px  #0ef;
+}
+.textcome{
+    color:#0ef ;
+}
+.download{
+    color: black;
+    font-weight: bolder;
+    pointer-events: auto;
+    cursor: pointer;
+    text-decoration: none;
+    background-color: #0ef ;
+    padding: 5px;
+    margin-top: 5px;
+    /* width: 190px; */
+    text-align: center;
+    border-radius: 10px;
+}
+.mypicbox{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+}
+.mypic{
+    width: 25vw;
+    /* height: 47vh; */
+   border: 5px solid white;
+   box-shadow: 0 0 30px white;
+   padding: 30px;
+    border-radius:85% ;
+    /* box-shadow: 0 0 40px  rgb(98, 241, 193); */
+}
+.main{
+    pointer-events: none;
+    width: 100%;
+    position: relative;
+    background-color:transparent;
+    display: flex;
+   justify-content: space-between;
+   height: 97vh;
+   /* box-shadow: 0 0 40px  rgb(98, 241, 193); */
+}
+.main2{
+    position: relative;
+    width: 100%;
+    background-color:transparent;
+    /* box-shadow: inset 0 0 20px rgb(152, 239, 210); */
+    padding: 20px;
+} 
+.texts{
+    width: 100%;
+}
+.text1{
+    padding: 20px;
+}
+.text1 h1{
+text-align: center;
+color: white;
+margin-bottom: 10px;
+
+}
+.text1 h1:hover{
+    text-shadow: 20px 10px 2px grey;
+}
+.text1 p{
+    color:#0ef;
+    text-align: center;
+    font-size: large;
+    padding: 20px;
+}
+.imgs{
+    width: 40%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imgs img{
+    width: 50%;
+    height: 40%;
+    border-radius: 20px;
+    /* box-shadow: 20px 20px 20px ; */
+}
+.text3{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+}
+.text3 .skill{
+    grid-column-start: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.text3 p{
+    background-color: transparent;
+    color: white;
+    margin: 20px;
+    font-size: large;
+    font-weight: bold;
+    position: relative;
+}
+.text3 div{
+    /* box-shadow:inset 0 0 20px rgb(140, 232, 201); */
+ margin-top: 10px;
+    color: #0ef;
+    padding: 10px;
+}
+li{
+    list-style: none;
+}
+li i {
+    margin: 10px;
+}
+.show{
+    display: block;
+}
+
+.hide{
+    display: none;
+}
+.text3 p:hover{
+    color: #0ef;
+    text-shadow: 0 0  30px #0ef;
+}
+#w{
+    position: absolute;
+    z-index: -2;
+    inset: 0;
+    width: 100%;
+    /* height: 100%; */
+}
+#space{
+    width: 100%;
+height: 100%;
+}
+@media(max-width:800px){
+    .mypic{
+        border: none;
+        width: 30vw;
+    }
+}
+@media(max-width:420px){
+    .main{
+        height: 90vh;
+    }
+    .text3{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+    .mypicbox{
+        margin-top: 50px;
+        width: 100%;
+        height: 40%;
+    }
+    .mypic{
+        border: none;
+        width: 40%;
+    }
+    .text3 .skill{
+        grid-column-start: 1;    
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+}
+.project-container{
+    background-color: black;
+    width: 100vw;
+    padding: 20px;
+}
+.project-container>p{
+   text-align: center;
+   font-weight: bolder;
+    font-size: x-large;
+    color: #0ef ;
+}
+
+.project{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:1fr;
+}
+.tvcontainer{
+    position: relative;
+}
+.project >div{
+    width: 100%;
+    margin: auto;
+    padding: 10px;
+}
+.project div video{
+    position: absolute;
+    top: 20%; 
+    left: 12%;
+    width: 65%;
+    height: 55%;
+}
+.project div img{
+    width: 90%;
+}
+center{
+    font-weight: bold;
+    font-size: larger;
+    color:#0ef; ;
+}
+.details{
+    font-size: large;
+    color:white;
+    text-align: center;
+}
+.project a{
+    color:blanchedalmond;
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+}
+.project a:hover{
+    color: blue;
+}
+.tech{
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+    font-size:larger ;
+    color:#0ef;
+}
+.tecdet ul{
+    display: flex;
+    margin-top: 10px;
+flex-wrap: wrap;
+justify-content: center;
+}
+.tecdet li{
+
+    color: white;
+    border: 2px solid #0ef;
+    margin: 5px;
+    padding: 5px;
+
+    /* border-radius:45%; */
+    /* box-shadow: inset 0 0 25px orangered; */
+}
+@media(max-width:600px){
+    .background-box {
+        display: none;
+    }
+    header{
+        padding: 10px ;  
+    }
+    .naam{
+        font-size:x-large;
+        font-weight: bold;
+    }
+    .main{
+      display: flex;
+      flex-direction: column-reverse;
+}
+    .reaches a{
+        font-size: large;
+        margin: 10px;
+        pointer-events: auto;
+    }
+    .mypicbox{
+        margin-top: 50px;
+        width: 100%;
+        height: 40%;
+        
+    }
+    .mypic{
+        width: 40vw;
+        padding: 0;
+        /* border: none; */
+    }
+    .text{
+        width: 100%;
+        height: 50%;
+    }
+    .project{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows:1fr 1fr ;
+    }
+    .main{
+        pointer-events: auto;
+        background-color: black;
+         }
+}
